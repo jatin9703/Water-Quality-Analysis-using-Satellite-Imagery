@@ -1,0 +1,6 @@
+locations:
+location_id, location_name
+
+
+Temprature:
+location_id, date, value

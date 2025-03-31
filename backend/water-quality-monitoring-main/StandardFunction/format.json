@@ -1,0 +1,74 @@
+{
+	"input format": {
+		"coordinates": [
+			["longitude", "latitude"]
+		],
+		"startDate": "YYYY-MM-DD",
+		"endDate": "YYYY-MM-DD",
+		"waterBodyName": "name",
+		"saveToCsv": "true",
+		"generateReport": "true",
+		"waterParameter": [
+			"parameter1",
+			"parameter2",
+			"parameter3"
+		]
+	},
+	"output format": {
+		"waterParameter1": {
+			"YYYY-MM-DD": 123,
+			"YYYY-MM-DD": 123,
+			"YYYY-MM-DD": 123
+		},
+		"waterParameter2": {
+			"YYYY-MM-DD": 123,
+			"YYYY-MM-DD": 123,
+			"YYYY-MM-DD": 123
+		},
+		"waterParameter3": {
+			"YYYY-MM-DD": 123,
+			"YYYY-MM-DD": 123,
+			"YYYY-MM-DD": 123
+		}
+	},
+	"input parameters": {
+		"startDate, endDate": "0 must be prefixed to fit format for DD and MM if necessary e.g. january: 01, feb: 02...",
+		"waterBodyName": "optional parameter",
+		"saveToCsv": "optional parameter, saves all values to a csv file locally",
+		"generateReport": "optional parameter, generates water quality report locally",
+		"waterParameter": "optional parameter, if not provided all will be selected else provide one or more of following as strings in an array: NDCI, NDTI, NDSI, DO, PH, TEMP, DOM, SM, FC. where: NDCI- chlorophyll, NDTI- turbidity, NDSI- salinity, DO- dissolved oxygen, PH- pH, TEMP- temprature, DOM- dissolved organic matter, SM- suspended matter, FC- fecal coliform"
+	},
+	"sample input": {
+		"coordinates": [
+			[
+				73.6472229107984,
+				20.04490099327118
+			],
+			[
+				73.6527160748609,
+				20.041514436506176
+			],
+			[
+				73.65752259341559,
+				20.042159500567656
+			],
+			[
+				73.6607841595777,
+				20.041191903481952
+			]
+		],
+		"startDate": "2023-01-09",
+		"endDate": "2023-01-11",
+		"waterBodyName": "Gangapur Dam",
+		"waterParameter": [
+			"NDTI"
+		]
+	},
+	"sample output": {
+		"NDTI": {
+			"2023-01-09": 123,
+			"2023-01-10": 234,
+			"2023-01-11": 345
+		}
+	}
+}

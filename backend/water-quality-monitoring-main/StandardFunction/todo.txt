@@ -1,0 +1,44 @@
+todo:
+	Hackathon:
+		-Hosting
+		-Report Enhance
+		-insights API
+		-All Parameters
+		-Parallel Parameters
+
+		- report generation:
+			- new report directory
+			- edge cases(no name)
+
+	- remaining functions
+	
+	- water quality index calculation
+
+	- progress and realtime updates using socket io
+	
+	- parallel processing of parameterwise using 
+	  multi threading or multiple terminals
+	  
+	- authentication
+
+	- docker containerisation
+	
+	- csv function
+
+	- error handling- custom error codes
+
+
+	Done:
+	- report generation
+
+	- send request stub (text_controller)
+	
+	- database integration (time-series data)
+
+	- Error Handling
+	
+	- Unit Testing
+
+	- data cleaning
+
+	- Module
